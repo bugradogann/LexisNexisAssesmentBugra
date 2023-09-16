@@ -1,0 +1,4 @@
+under this pages package java classes will be added for the pages that is used frequently while testing.
+mostly used web elements of the pages will be located and stored in those classes.
+Main class will be abstract basePage class and other page classes will extend it. Some methods such as navigating to a module will be created in the abstract basePage class.
+P.S. In this framework I will not implement those classes since this is a 3 cases assessment.
