@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports"},
         features = "src/test/resources/features",
         glue = "lexisNexisAssessment/step_definitions",
-        dryRun = true,
-        tags = "@reg"
+        dryRun = false,
+        tags = "@test"
 )
 public class CukesRunner {
 }

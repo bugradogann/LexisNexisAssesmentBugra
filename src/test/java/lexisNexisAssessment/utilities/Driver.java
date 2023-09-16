@@ -34,8 +34,6 @@ public class Driver {
             switch (browser) {
                 case "chrome":
                     ChromeOptions options = new ChromeOptions ();
-                    options.addExtensions (new File("ext_1.crx"));
-                    options.addExtensions (new File("ext_2.crx"));
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver(options));
                     break;
