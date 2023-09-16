@@ -1,7 +1,7 @@
-package lexisNexisAssesment.step_definitions;
+package lexisNexisAssessment.step_definitions;
 
-import lexisNexisAssesment.utilities.ConfigurationReader;
-import lexisNexisAssesment.utilities.Driver;
+import lexisNexisAssessment.utilities.ConfigurationReader;
+import lexisNexisAssessment.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

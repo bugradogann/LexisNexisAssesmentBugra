@@ -1,4 +1,4 @@
-package lexisNexisAssesment.utilities;
+package lexisNexisAssessment.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

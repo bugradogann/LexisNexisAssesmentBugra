@@ -1,4 +1,4 @@
-package lexisNexisAssesment.utilities;
+package lexisNexisAssessment.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
