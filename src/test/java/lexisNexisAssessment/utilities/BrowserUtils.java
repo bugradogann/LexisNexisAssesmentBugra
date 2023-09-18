@@ -6,6 +6,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class BrowserUtils {
 
@@ -111,6 +115,11 @@ public class BrowserUtils {
                 waitFor(1);
             }
         }
+    }
+
+    public static WebElement waitForVisibility(WebElement element, Duration timeToWaitInSec) {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), timeToWaitInSec);
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
 }
