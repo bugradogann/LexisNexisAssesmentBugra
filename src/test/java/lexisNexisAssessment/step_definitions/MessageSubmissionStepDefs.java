@@ -87,4 +87,29 @@ public class MessageSubmissionStepDefs {
         Assert.assertEquals(expMsgDesc,actMsgDesc);
     }
 
+    @When("the user sends a message without a subject")
+    public void the_user_sends_a_message_without_a_subject() {
+        senderName.sendKeys("david");
+        senderPhone.sendKeys("12345678910");
+        senderEmail.sendKeys("test@test.com");
+        messageDesc.sendKeys("this is a test message description");
+        messageSubmit.click();
+
+        BrowserUtils.waitFor(1);
+    }
+    @Then("the user should see {string} {string} error messages on the screen")
+    public void the_user_should_see_error_messages_on_the_screen(String emptyTextBoxName, String errorMsg) {
+        String expectedErrorMsg = emptyTextBoxName + errorMsg;
+        String actualErrorMsg = driver.findElement(By.xpath("//p[.='" + emptyTextBoxName + " may not be blank']")).getText();
+
+        Assert.assertEquals(expectedErrorMsg,actualErrorMsg);
+    }
+
+    @Then("the user should see {string}")
+    public void the_user_should_see(String expErrorMsg) {
+        String actErrorMsg = driver.findElement(By.xpath("//p[.='" + expErrorMsg + "']")).getText();
+
+        Assert.assertEquals(expErrorMsg,actErrorMsg);
+    }
+
 }

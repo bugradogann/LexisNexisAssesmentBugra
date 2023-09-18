@@ -1,5 +1,5 @@
+@reg
 Feature: Message Submission
-
 
   Scenario Outline: Message confirmation for user
     Given the user is on home page
@@ -9,7 +9,7 @@ Feature: Message Submission
       | name  | email         | phoneNumber | subject     | messageDescription                  |
       | david | test@test.com | 12345678910 | testSubject | hi this is test message description |
 
-  @wip
+
   Scenario Outline: Message confirmation for user
     Given the user is on home page
     When the user sends a valid message with his "<name>", "<email>", "<phoneNumber>", "<subject>", "<messageDescription>"
@@ -19,3 +19,12 @@ Feature: Message Submission
     Examples:
       | name       | email         | phoneNumber | subject     | messageDescription                  |
       | david berg | test@test.com | 12345678910 | testSubject | Hi this is test message description |
+
+  @wip
+  Scenario: Invalid Message Submission Error Messages
+    Given the user is on home page
+    When the user sends a message without a subject
+    Then the user should see "Subject" " may not be blank" error messages on the screen
+    And the user should see "Subject must be between 5 and 100 characters."
+
+

@@ -1,3 +1,4 @@
+@reg
 Feature: Room Creation
 
 
