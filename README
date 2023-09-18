@@ -1,0 +1,24 @@
+Hi.
+
+First of all I appreciate your time for reviewing my test scenarios, scripts and the whole framework.
+I tried to put as many comments as possible to make your job easier :).
+
+Should you face any issues while running the test cases please contact me on ahmetbugra_94@hotmail.com or 678 570 0620.
+I'll be more than happy to help you out.
+
+The test cases can be found ;
+LexisNexisAssesmentBugra\src\test\java\lexisNexisAssessment
+
+Project has been created using Maven, Java, Junit, Cucumber, Gherkin.
+
+POM design pattern has not been implemented because of the size of the assessment.
+However, it is explained under pages package.
+
+Regarding message submission test cases; there can be more test cases created in terms of negative testing.
+I put one example negative test case.
+
+I had an emergency situation during the assessment weekend but I tried to do my best to demonstrate
+my automation skills in Java and Selenium. In a well developed web environment I can definitely perform way too better.
+
+Sincerely,
+Bugra Dogan
