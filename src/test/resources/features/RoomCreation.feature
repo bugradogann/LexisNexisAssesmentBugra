@@ -1,6 +1,6 @@
 Feature: Room Creation
 
-  @wip
+
   Scenario Outline: Multiple type of Room Creation
     Given the user is logged in thru admin panel
     When the user creates rooms with following options
